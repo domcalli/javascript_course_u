@@ -259,4 +259,149 @@ if (favorite === 23) {
 
 if (favorite !== 23) console.log("Why not 23?");
 
+
+
+const hasDriversLicense = true; // A
+const hasGoodVision = false; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log("Sarah is able to drive!");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+const isTired = true; //C
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive!");
+} else {
+  console.log("Someone else should drive...");
+}
+
+
+/////////////////////////////////
+// Coding Challenge #3
+
+// let scoreDolphins = (96 + 18 + 89) / 3;
+// let scoreKoalas = (88 + 91 + 110) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// if (scoreDolphins > scoreKoalas) {
+//   console.log(`Dolphins win the competition!`);
+// } else if (scoreKoalas > scoreDolphins) {
+//   console.log(`Koalas win the competition!`);
+// } else {
+//   console.log(`The Dolphins and Koalas have tied!`);
+// }
+
+// BONUS 1
+// let scoreDolphins = (97 + 112 + 101) / 3;
+// let scoreKoalas = (109 + 95 + 123) / 3;
+
+let scoreDolphins = (97 + 112 + 101) / 3;
+let scoreKoalas = (109 + 95 + 106) / 3;
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+  console.log(`Dolphins win the competition!`);
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+  console.log(`Koalas win the competition!`);
+} else if (
+  scoreDolphins === scoreKoalas &&
+  scoreDolphins >= 100 &&
+  scoreKoalas >= 100
+) {
+  console.log(`The Dolphins and Koalas have tied!`);
+} else {
+  console.log(`Neither team qualifies to win the trophy 😐`);
+}
+
+
+const day = "monday";
+
+switch (day) {
+  case "monday": // day === "monday"
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("write code examples");
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("enjoy the weekend!");
+    break;
+  default:
+    console.log("not a valid day!");
+}
+
+if (day === "monday") {
+  console.log("Plan course structure");
+  console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("Prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("write code examples");
+} else if (day === "friday") {
+  console.log("Record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("enjoy the weekend!");
+} else {
+  console.log("not a vailid day");
+}
+
+
+//Expressions - produces a value
+3 + 4;
+1991;
+true && false && !false;
+// Only statements can be inserted into template literals
+
+//Statements
+if (23 > 10) {
+  const str = "23 is bigger ";
+}
+
+const me = "Domonique";
+console.log(`I'm ${2037 - 1987} years old ${me}`);
+
+
+const age = 33;
+// age >= 18
+//   ? console.log("I like to drink rum")
+//   : console.log("I like to drink water");
+
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
+
+let drink2;
+
+if (age >= 18) {
+  drink2 = "wine";
+} else {
+  drink2 = "water";
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
 */
+
+let bill = 430;
+let tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+
+console.log(
+  `The bill was ${bill}, the tip was ${tip} and the total value was ${
+    bill + tip
+  }`
+);
